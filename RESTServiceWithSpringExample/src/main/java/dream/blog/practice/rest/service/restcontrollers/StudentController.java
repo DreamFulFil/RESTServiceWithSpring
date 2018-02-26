@@ -31,7 +31,7 @@ public class StudentController<T> {
 	}
 	
 	@RequestMapping(value = "/{id}",
-			        produces = "application/json")
+			        produces = "application/xml")
 	public Student getStudentById(@PathVariable Integer id) {
 		return students.get(id);
 	}
